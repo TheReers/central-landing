@@ -1,9 +1,7 @@
 "use client";
 
-import React, { FC, ReactElement, useState } from "react";
+import React, { FC, ReactElement} from "react";
 import Image from "next/image";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import ResponsiveAppBar from "./navbar";
 import { useRouter } from "next/navigation";
 
@@ -45,8 +43,7 @@ Get your personalized audio content in just a few clicks
           </div>
 
           <div className="mt-12 flex justify-center mb-10 sm:mb-0 ">
-            {/* @ts-ignore */}
-            <button
+              <button
               className=" bg-create-gradient flex items-center justify-center rounded-full h-10  md:h-[59px] w-[150px] md:w-[216px]  mt-3 border border-br-pink"
               onClick={() => {
                 router.push("https://podcast.reers.tech/signup");

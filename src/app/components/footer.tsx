@@ -1,11 +1,10 @@
 "use client";
 import React, { FC, ReactElement } from "react";
-import { Box, Container, Grid, Typography, Button } from "@mui/material";
+import { Box, Container, Grid} from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const Footer: FC<{ className?: string }> = ({ className }): ReactElement => {
-  const pages = ["Home", "About", "Features"];
   const router = useRouter();
   return (
     

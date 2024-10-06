@@ -22,7 +22,9 @@ const GlobalContext = createContext<ContextProps>({
   setVideoUrl: () => {},
 });
 
-// @ts-ignore
+// @ts-expect-error chidren type error
+
+
 export const GlobalContextProvider = ({ children }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState("");

@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -21,37 +20,18 @@ function ResponsiveNav() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-    null
-  );
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = (e: any) => {
-    e.preventDefault();
-    setOpen(true);
-  };
-  const handleClose = () => setOpen(false);
-  const [openWaitlist, setOpenWaitlist] = useState(false);
-  const handleOpenWaitlist = () => {
-    setOpenWaitlist(true);
-  };
-  const handleCloseWaitlist = () => {
-    setOpenWaitlist(false);
-  };
+ 
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+
 
   const router = useRouter();
 

@@ -1,6 +1,5 @@
 import * as React from "react";
 import Image from "next/image";
-import styles from "../dash.module.css"
 import { useRouter } from "next/navigation";
 
 
